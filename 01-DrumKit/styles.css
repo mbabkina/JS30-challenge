@@ -1,0 +1,64 @@
+body {
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.claimer {
+  position: fixed;
+  top: 2px;
+  right: 2px;
+  background: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 0.5rem black;
+  color: #ffc600;
+  font-weight: 700;
+  padding: 10px;
+}
+.key-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.key {
+  padding: 1rem 0.5rem;
+  border: 0.5rem solid black;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 0.5rem black;
+  border-radius: 0.5rem;
+  transition: all 0.07s;
+}
+
+.key + .key {
+  margin-left: 1rem;
+}
+.key-name {
+  color: #ffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.sound-name {
+  color: #ffc600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-top: 0.1rem;
+  font-weight: 600;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+.sound-wrapper {
+  visibility: hidden;
+}
